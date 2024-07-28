@@ -1,0 +1,199 @@
+
+.stateCard {
+  width: 250px;
+  height: auto;
+  padding: 1rem;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  cursor: pointer;
+}
+
+.cardImage {
+  width: 200px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.CardGrid {
+  display: grid;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.Navigation {
+  display: flex;
+  justify-content: center;
+  background-color: #f9feff;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.navItem {
+  margin: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navItem img {
+  width: 200px;
+  height: 200px;
+}
+
+.navItem button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;;
+  color: #002f68;
+  border: 1px solid #002f68;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.navItem button:hover {
+  background-color: #002f68;
+  color: white;
+  border: 1px solid white;
+}
+
+@media (max-width: 980px) {
+  .Navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .CardGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .CardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 479px) {
+  .CardGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.hero-section {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.hero-section .text{
+  text-align: left;
+  width: 800px;
+  padding: 3rem;
+}
+.hero-section h1{
+  font-size: 5rem;
+  color: #1f1e1e;
+  text-align: left;
+}
+
+@media (min-width: 1000px) {
+  .hero-section {
+    background-image: url('/hero2.png');
+    height: 100vh;
+  }
+}
+
+@media (max-width:999px) {
+  .hero-section h1{
+    font-size: 2rem;
+    color: #13213f;
+    text-align: left;
+  }
+  .hero-section .text{
+    text-align: left;
+    width: 200px;
+    padding: 3rem;
+  }
+  .hero-section {
+    background-image: url('/hero-small.png');
+  }
+}
+
+@media (max-width: 669px) {
+  .hero-section {
+    display: none;
+  }
+}
+.StatesHeading{
+  text-align: center;
+  font-size: 3rem;
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+
+}
+.header{
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+}
+.Link{
+  text-decoration: none;
+}
+
+/* IndivState.css */
+
+.district-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.district-container h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.district-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.district-card {
+  padding: 10px;
+  border: 2px solid #acc1ff;
+  border-radius: 5px;
+  background-color: #dbfffd;
+  font-size: 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.district-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.district-card p {
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .district-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+

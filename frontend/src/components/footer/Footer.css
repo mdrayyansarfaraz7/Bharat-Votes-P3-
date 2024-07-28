@@ -1,0 +1,100 @@
+.footer {
+    margin-top: 2rem;
+    background-color: #002147;
+    color: white;
+    padding: 40px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.footer-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #f0f8ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #bdf4fc;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #001a33;
+    border-top: 1px solid #004080;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Specific Styles for Election Commission of India */
+.footer-section .ec-india {
+    color: white; /* Set text color to white */
+    font-size: 1.3rem; /* Same size as heading for alignment */
+    text-align: center; /* Center text within the section */
+    margin-top: 0; /* Remove top margin for better alignment */
+}
+
+/* Responsive Design for screens around 887x619 */
+@media (max-width: 887px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 15px 0;
+        text-align: center;
+    }
+}

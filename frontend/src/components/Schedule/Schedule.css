@@ -1,0 +1,59 @@
+
+  
+  h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #002147; /* Heading color matching footer */
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* State Cards Container */
+  .state-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Spacing between cards */
+    margin: 0 auto;
+    max-width: 1200px; /* Max width to keep content centered */
+  }
+  
+  /* State Card */
+  .state-card {
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1;
+    max-width: calc(33.333% - 20px); /* Adjust width with gap */
+    box-sizing: border-box;
+    text-align: center; /* Center text within the card */
+  }
+  
+  .state-heading {
+    font-size: 1.4rem;
+    color: #002147; /* Match heading color */
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .voting-dates {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter color for dates */
+    line-height: 1.5; /* Improve readability */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .state-card {
+      max-width: calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .state-card {
+      max-width: calc(100% - 20px); /* Full width on small screens */
+    }
+  }
+  

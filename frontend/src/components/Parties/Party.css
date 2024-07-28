@@ -1,0 +1,46 @@
+/* Party.css */
+.party-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures the container takes up the full height of the viewport */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .party-container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .party-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .party-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .party-card h2 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin: 10px 0;
+  }
+  
+  .party-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,55 @@
+.how-to-vote-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial, sans-serif';
+    background-color: white; /* Set background color to white */
+}
+
+.how-to-vote {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4169e1; /* Slightly lighter shade of royal blue */
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+li img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+li div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.instruction {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1e90ff; 
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.writing {
+    font-size: 1em;
+    color: #777;
+    margin: 0;
+    text-align: left;
+}
